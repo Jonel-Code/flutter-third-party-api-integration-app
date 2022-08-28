@@ -25,7 +25,6 @@ class HttpRequestConfig<T> {
   final Map<String, dynamic>? headers;
   final String? contentType;
 
-  // TODO: find a way to parse the array
   final T Function(Map<String, dynamic> data)? responseParser;
 
   T parse(dynamic data) {
